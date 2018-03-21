@@ -19,6 +19,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintln(&writer, "============ NEW REQUEST ============")
 
     fmt.Fprintln(&writer, "request.RequestURI:", r.RequestURI)
+    fmt.Fprintln(&writer, "request.Host:", r.Host)
     fmt.Fprintln(&writer, "request.Method:", r.Method)
     fmt.Fprintln(&writer, "request.RemoteAddr:", r.RemoteAddr)
     fmt.Fprintln(&writer, "request.TLS:", r.TLS)
